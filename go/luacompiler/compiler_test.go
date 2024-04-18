@@ -1,4 +1,4 @@
-package bullmq
+package luacompiler
 
 import (
 	"bytes"
