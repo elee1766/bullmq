@@ -6,7 +6,7 @@ import (
 	"fmt"
 
 	"github.com/redis/go-redis/v9"
-	"github.com/taskforcesh/bullmq/go/luacompiler"
+	"github.com/taskforcesh/bullmq/go/luabundler"
 )
 
 var ErrScriptNotFound = errors.New("script not found")
@@ -16,7 +16,7 @@ type Scripts struct {
 }
 
 func NewScripts(
-	w *luacompiler.Workspace,
+	w *luabundler.Workspace,
 ) *Scripts {
 	out := &Scripts{
 		scripts: make(map[string]*redis.Script),

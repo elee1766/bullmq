@@ -1,4 +1,4 @@
-package luacompiler
+package luabundler
 
 import (
 	"bytes"
